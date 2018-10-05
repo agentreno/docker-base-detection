@@ -11,7 +11,8 @@ authentication.
 
 ## Install
 
-Clone the repo and do `pip3 install .`
+Clone the repo and do `pip3 install .`, or just do `pip3 install
+git+https://github.com/agentreno/dockerinspect`
 
 ## Tutorial: Finding out if one docker image is based on another
 
