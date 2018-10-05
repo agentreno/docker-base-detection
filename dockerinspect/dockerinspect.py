@@ -75,13 +75,3 @@ class DockerImage:
                 return False
 
         return True
-
-
-if __name__ == '__main__':
-    registry_base = 'http://localhost:5000/'
-
-    client = RegistryClient(registry_base)
-    base_image = client.get_image('ubuntu', 'latest')
-    child_image = client.get_image('base-detection-example', 'latest')
-
-    print(base_image.is_base_of(child_image))
